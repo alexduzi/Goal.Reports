@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Goal.Reports.Factory
+namespace Goal.Reports.Factory.DataAcess
 {
     public interface IReportIterator
     {

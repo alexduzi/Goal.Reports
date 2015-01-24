@@ -7,8 +7,9 @@ using Goal.Reports.Infraesctructure.DataAccess;
 using Goal.Reports.Infraesctructure.DataAccess.Models;
 using System.Collections;
 using Goal.Reports.Types.Enums;
+using Goal.Reports.Factory.DataAccess;
 
-namespace Goal.Reports.Factory
+namespace Goal.Reports.Factory.DataAcess
 {
     public static class ReportFactory
     {

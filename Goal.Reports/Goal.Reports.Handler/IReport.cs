@@ -8,6 +8,6 @@ namespace Goal.Reports.Handler
 {
     public interface IReport
     {
-        void execute();
+        void Execute(Dictionary<string, object> dictionary);
     }
 }

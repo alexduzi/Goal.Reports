@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Goal.Reports.Handler
 {
-    public class ReportApprover<T> : IReportHandler<T> where T : IReport
+    public class ReportApprover<T> : 
+        IReportHandler<T> where T : IReport
     {
         private IReportHandler<T> successor;
         private string name;
@@ -17,7 +18,7 @@ namespace Goal.Reports.Handler
             this.name = name;
         }
 
-        public bool CanHandle(T o)
+        public bool CanHandle(T o, Dictionary<string, object> dictionary)
         {
             return this.specification.IsSatisfiedBy(o);
         }
@@ -27,16 +28,16 @@ namespace Goal.Reports.Handler
             this.successor = handler;
         }
 
-        public void HandleRequest(T o)
+        public void HandleRequest(T o, Dictionary<string, object> dictionary)
         {
-            if (CanHandle(o))
+            if (CanHandle(o, dictionary))
             {
-                o.execute();
+                o.Execute(dictionary);
                 
             }
             else
             {
-                this.successor.HandleRequest(o);
+                this.successor.HandleRequest(o, dictionary);
             }
         }
 
@@ -44,5 +45,6 @@ namespace Goal.Reports.Handler
         {
             this.specification = specification;
         }
+
     } 
 }

@@ -41,7 +41,9 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Enums\ReportTypes.cs" />
-    <Compile Include="Handlers\ReworkHandler.cs" />
+    <Compile Include="Handlers\AllWork.cs" />
+    <Compile Include="Handlers\AllWorkDrillAcc.cs" />
+    <Compile Include="Handlers\AllWorkDrill.cs" />
     <Compile Include="Rework.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

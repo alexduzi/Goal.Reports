@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using Goal.Reports.Infraesctructure.DataAccess;
 using Goal.Reports.Infraesctructure.DataAccess.Models;
 using Goal.Reports.Infraesctructure.DataAccess.Repositories;
+using Goal.Reports.Factory.DataAcess;
 
-namespace Goal.Reports.Factory
+namespace Goal.Reports.Factory.DataAccess
 {
     public class AllWorkFactory : IReportIterator
     {

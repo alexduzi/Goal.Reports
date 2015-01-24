@@ -10,7 +10,7 @@ namespace Goal.Reports.Handler
     public interface IReportHandler<T>
     {
         void SetSuccessor(IReportHandler<T> handler);
-        void HandleRequest(T o);
+        void HandleRequest(T o, Dictionary<string, object> dictionary);
         void SetSpecification(IReportSpecification<T> specification);
     }
 }
