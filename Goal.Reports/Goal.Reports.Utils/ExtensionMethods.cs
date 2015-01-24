@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Goal.Reports.Factory
+namespace Goal.Reports.Utils
 {
-    public class Class1
+    public static class ExtensionMethods
     {
+
+        
     }
 }

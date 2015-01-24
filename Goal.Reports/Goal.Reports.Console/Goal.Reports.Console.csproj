@@ -56,6 +56,10 @@
       <Project>{f3ddcd18-aaa6-4f03-8d93-f5259466ab34}</Project>
       <Name>Goal.Reports.Handler</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Goal.Reports.Infraesctructure.DataAccess\Goal.Reports.Infraesctructure.DataAccess.csproj">
+      <Project>{87e3be60-7934-4c0d-a9b5-9d3302984e93}</Project>
+      <Name>Goal.Reports.Infraesctructure.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Goal.Reports.Types\Goal.Reports.Types.csproj">
       <Project>{9dfe54f1-7c35-4c72-ad38-dbb1423bca2e}</Project>
       <Name>Goal.Reports.Types</Name>

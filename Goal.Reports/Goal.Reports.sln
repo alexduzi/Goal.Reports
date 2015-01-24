@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goal.Reports.Console", "Goa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goal.Projects.Tests", "Goal.Projects.Tests\Goal.Projects.Tests.csproj", "{AF3949C5-666D-4105-BCDA-966ACF8E2E13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goal.Reports.Infraesctructure.DataAccess", "Goal.Reports.Infraesctructure.DataAccess\Goal.Reports.Infraesctructure.DataAccess.csproj", "{87E3BE60-7934-4C0D-A9B5-9D3302984E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goal.Reports.Utils", "Goal.Reports.Utils\Goal.Reports.Utils.csproj", "{29603E96-B9F6-40E3-A000-B1E95AE3E41B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{AF3949C5-666D-4105-BCDA-966ACF8E2E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF3949C5-666D-4105-BCDA-966ACF8E2E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF3949C5-666D-4105-BCDA-966ACF8E2E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E3BE60-7934-4C0D-A9B5-9D3302984E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E3BE60-7934-4C0D-A9B5-9D3302984E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E3BE60-7934-4C0D-A9B5-9D3302984E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E3BE60-7934-4C0D-A9B5-9D3302984E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29603E96-B9F6-40E3-A000-B1E95AE3E41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29603E96-B9F6-40E3-A000-B1E95AE3E41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29603E96-B9F6-40E3-A000-B1E95AE3E41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29603E96-B9F6-40E3-A000-B1E95AE3E41B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
