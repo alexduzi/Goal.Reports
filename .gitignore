@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Goal.Reports/Goal.Projects.Tests/obj/Debug
+/Goal.Reports/Goal.Reports.Types/bin/Debug
+/Goal.Reports/Goal.Reports.Types/obj/Debug
+/Goal.Reports/Goal.Reports.Handler/bin/Debug
+/Goal.Reports/Goal.Reports.Handler/obj/Debug
+/Goal.Reports/Goal.Reports.Factory/bin/Debug
+/Goal.Reports/Goal.Reports.Factory/obj/Debug
+/Goal.Reports/Goal.Reports.Console/obj/Debug
+/Goal.Reports/Goal.Reports.Console/bin/Debug
