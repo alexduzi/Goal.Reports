@@ -53,20 +53,6 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Goal.Reports.Factory\Goal.Reports.Factory.csproj">
-      <Project>{3aa43e94-0ba0-4fc6-9ba5-f9655abe7789}</Project>
-      <Name>Goal.Reports.Factory</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Goal.Reports.Handler\Goal.Reports.Handler.csproj">
-      <Project>{f3ddcd18-aaa6-4f03-8d93-f5259466ab34}</Project>
-      <Name>Goal.Reports.Handler</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Goal.Reports.Types\Goal.Reports.Types.csproj">
-      <Project>{9dfe54f1-7c35-4c72-ad38-dbb1423bca2e}</Project>
-      <Name>Goal.Reports.Types</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -1,0 +1,4 @@
+D:\git_workspace\Goal.Reports\Goal.Reports\Goal.Reports.Handler\bin\Debug\Goal.Reports.Handler.dll
+D:\git_workspace\Goal.Reports\Goal.Reports\Goal.Reports.Handler\bin\Debug\Goal.Reports.Handler.pdb
+D:\git_workspace\Goal.Reports\Goal.Reports\Goal.Reports.Handler\obj\Debug\Goal.Reports.Handler.dll
+D:\git_workspace\Goal.Reports\Goal.Reports\Goal.Reports.Handler\obj\Debug\Goal.Reports.Handler.pdb

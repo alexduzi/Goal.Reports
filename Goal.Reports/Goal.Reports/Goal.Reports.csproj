@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{10887FC5-7723-408B-8C2B-59FEA5D8E119}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{F3DDCD18-AAA6-4F03-8D93-F5259466AB34}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Goal.Reports.Console</RootNamespace>
-    <AssemblyName>Goal.Reports.Console</AssemblyName>
+    <RootNamespace>Goal.Reports.Handler</RootNamespace>
+    <AssemblyName>Goal.Reports.Handler</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,18 +39,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Handler\Common\GroupCpByDay.cs" />
+    <Compile Include="Handler\Common\GroupWlByDay.cs" />
+    <Compile Include="Models\DataByDay.cs" />
+    <Compile Include="Models\TicketsCpMonth.cs" />
+    <Compile Include="ReportManager.cs" />
+    <Compile Include="Controller\AllWorkController.cs" />
+    <Compile Include="Controller\IReportController.cs" />
+    <Compile Include="Handler\AllWork\AllWorkReport.cs" />
+    <Compile Include="Handler\AllWork\AllWorkDrillReport.cs" />
+    <Compile Include="Handler\AllWork\AllWorkDrillAccReport.cs" />
+    <Compile Include="Controller\ReportFactory.cs" />
+    <Compile Include="Handler\PerformReport.cs" />
+    <Compile Include="Repositories\IDataExtractor.cs" />
+    <Compile Include="Models\TicketsCp.cs" />
+    <Compile Include="Models\TicketsWl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\TicketsCpRepository.cs" />
+    <Compile Include="Repositories\TicketsWlRepository.cs" />
+    <Compile Include="Types\ReportRequest.cs" />
+    <Compile Include="Types\ReportResponse.cs" />
+    <Compile Include="Types\ReportTypes.cs" />
+    <Compile Include="Utils\ExtensionMethods.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Goal.Reports\Goal.Reports.csproj">
-      <Project>{f3ddcd18-aaa6-4f03-8d93-f5259466ab34}</Project>
-      <Name>Goal.Reports</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
